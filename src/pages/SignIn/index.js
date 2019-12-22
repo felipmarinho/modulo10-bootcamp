@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Image } from 'react-native';
 
@@ -12,11 +11,10 @@ import {
   FormInput,
   SubmitButton,
   SignLink,
-  SignLinkText
+  SignLinkText,
 } from './styles';
 
-
-export default function SignIn({navigation}) {
+export default function SignIn({ navigation }) {
   return (
     <Background>
       <Container>
@@ -27,16 +25,16 @@ export default function SignIn({navigation}) {
             keyboardType="email-address"
             autoCorrect={false}
             autoCapitalize="none"
-            placeholder="Digite o seu email"/>
+            placeholder="Digite o seu email"
+          />
           <FormInput
             icon="lock-outline"
             secureTextEntry
-            placeholder="Sua senha secreta"/>
-          <SubmitButton onPress={() => {}}>
-            Acessar
-          </SubmitButton>
+            placeholder="Sua senha secreta"
+          />
+          <SubmitButton onPress={() => {}}>Acessar</SubmitButton>
         </Form>
-        <SignLink onPress={() => navigation.navigate('SignUp') }>
+        <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText>Criar conta gratuita</SignLinkText>
         </SignLink>
       </Container>

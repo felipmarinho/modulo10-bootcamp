@@ -11,11 +11,10 @@ import {
   FormInput,
   SubmitButton,
   SignLink,
-  SignLinkText
+  SignLinkText,
 } from './styles';
 
-
-export default function SignUp({navigation}) {
+export default function SignUp({ navigation }) {
   return (
     <Background>
       <Container>
@@ -25,26 +24,26 @@ export default function SignUp({navigation}) {
             icon="person-outline"
             autoCorrect={false}
             autoCapitalize="none"
-            placeholder="Nome completo"/>
+            placeholder="Nome completo"
+          />
 
           <FormInput
             icon="mail-outline"
             keyboardType="email-address"
             autoCorrect={false}
             autoCapitalize="none"
-            placeholder="Digite o seu email"/>
+            placeholder="Digite o seu email"
+          />
 
           <FormInput
             icon="lock-outline"
             secureTextEntry
-            placeholder="Sua senha secreta"/>
+            placeholder="Sua senha secreta"
+          />
 
-          <SubmitButton onPress={() => {}}>
-            Criar
-          </SubmitButton>
-
+          <SubmitButton onPress={() => {}}>Criar</SubmitButton>
         </Form>
-        <SignLink onPress={() => navigation.navigate('SignIn') }>
+        <SignLink onPress={() => navigation.navigate('SignIn')}>
           <SignLinkText>Já possuí cadastro.</SignLinkText>
         </SignLink>
       </Container>
