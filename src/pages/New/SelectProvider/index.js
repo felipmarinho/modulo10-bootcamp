@@ -59,4 +59,3 @@ SelectProvider.navigationOptions = ({ navigation }) => ({
     </TouchableOpacity>
   ),
 });
-// https://skylab.rocketseat.com.br/node/go-barber-mobile/lesson/listagem-de-prestadores -> 6'00"
